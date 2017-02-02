@@ -16,11 +16,10 @@ body {
   margin: 0 auto;
   height: 1900px;
   position: static;
-  padding-right: 100px;
 }
 header,
 footer {
-  background-color: #000000;
+  background-color: #ffffff;
 }
 header {
   display: flex;
@@ -80,35 +79,41 @@ main section article {
   height: 250px;
   font-size: 250px;
 }
+main section:nth-child(even) {
+  background-color: rgba(255, 0, 255, 0.5);
+}
 main section:nth-child(even) article:nth-child(1) {
-  background-color: #e3d47f;
+  background-color: rgba(255, 0, 255, 0.5);
 }
 main section:nth-child(even) article:nth-child(2) {
-  background-color: #d47fe3;
+  background-color: rgba(0, 255, 255, 0.5);
 }
 main section:nth-child(even) article:nth-child(3) {
-  background-color: #7fe3d4;
-}
-main section:nth-child(even) article:nth-child(4) {
-  background-color: #e3d47f;
+  background-color: rgba(255, 255, 0, 0.5);
 }
 main section:nth-child(even) article:nth-child(5) {
-  background-color: #d47fe3;
+  background-color: rgba(255, 0, 255, 0.5);
+}
+main section:nth-child(even) article:nth-child(4) {
+  background-color: rgba(0, 255, 255, 0.5);
+}
+main section:nth-child(odd) {
+  background-color: rgba(128, 127, 255, 0.5);
 }
 main section:nth-child(odd) article:nth-child(1) {
-  background-color: #dbaab1;
+  background-color: rgba(128, 127, 255, 0.5);
 }
 main section:nth-child(odd) article:nth-child(2) {
-  background-color: #b1dca9;
+  background-color: rgba(255, 128, 128, 0.5);
 }
 main section:nth-child(odd) article:nth-child(3) {
-  background-color: #b1b1b1;
-}
-main section:nth-child(odd) article:nth-child(4) {
-  background-color: #dbaab1;
+  background-color: rgba(128, 128, 128, 0.5);
 }
 main section:nth-child(odd) article:nth-child(5) {
-  background-color: #b1dca9;
+  background-color: rgba(128, 127, 255, 0.5);
+}
+main section:nth-child(odd) article:nth-child(4) {
+  background-color: rgba(255, 128, 128, 0.5);
 }
 footer {
   height: 70px;
@@ -125,5 +130,11 @@ footer div i {
   transition: color 1s;
 }
 footer div i:hover {
-  color: #7f8ee3;
+  color: rgba(0, 255, 0, 0.5);
+}
+.global {
+  display: flex;
+  flex-flow: row;
+  margin: 0 auto;
+  justify-content: center;
 }

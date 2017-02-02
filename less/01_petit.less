@@ -3,7 +3,7 @@
 @largeur_article : 250px;
 @couleur-icone : #f9d42a;
 @couleur-lienMenu : #fff;
-@couleur-base       : #e3d47f;
+@couleur-base       : rgba(255, 0, 255, 0.5);
 @couleur-complementaire : spin(@couleur-base, 180);
 // @couleur-contrast : contrast(@couleur-base);
 @couleur-contrast : contrast(@couleur-base);
@@ -53,7 +53,6 @@ body{
   margin: 0 auto;
   height: 1900px;
   position: static;
-  padding-right: 100px;
 }
 
 header, footer {
@@ -128,15 +127,17 @@ main{
           article:nth-child(1) {background-color: @couleur-base;}
           article:nth-child(2) {background-color: @triadic-1;}
           article:nth-child(3) {background-color: @triadic-2;}
-          article:nth-child(4) {background-color: @couleur-base;}
-          article:nth-child(5) {background-color: @triadic-1;}
+          article:nth-child(5) {background-color: @couleur-base;}
+          article:nth-child(4) {background-color: @triadic-1;}
+          background-color: @couleur-base;
       }
       &:nth-child(odd) {
           article:nth-child(1) {background-color: @couleur-8;}
           article:nth-child(2) {background-color: @couleur-9;}
           article:nth-child(3) {background-color: @couleur-10;}
-          article:nth-child(4) {background-color: @couleur-8;}
-          article:nth-child(5) {background-color: @couleur-9;}
+          article:nth-child(5) {background-color: @couleur-8;}
+          article:nth-child(4) {background-color: @couleur-9;} 
+          background-color: @couleur-8;
       }
     }
 }
@@ -160,4 +161,13 @@ footer div i{
 footer div i:hover{
    color : @couleur-complementaire;
 }
+
+
+.global{
+  display:flex;
+  flex-flow:row;
+  margin:0 auto;
+  justify-content:center;
+}
+
 

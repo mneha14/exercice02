@@ -24,6 +24,9 @@ main section {
   flex-wrap: nowrap;
   justify-content: flex-start;
 }
+main section article {
+  width: 20%;
+}
 footer {
   justify-content: space-around;
 }
